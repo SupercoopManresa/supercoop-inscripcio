@@ -1,23 +1,19 @@
-# -*- coding: utf-8 -*-
 {
-    'name': "Website Language Selector",
-
-    'summary': """Move the language select to the menu""",
-
-    'description': """Move the language select to the menu""",
-
-    'author': "Safyric Co., Ltd.",
-    'website': "https://www.safyric.com",
-
-    'category': 'Website',
-    'version': '12.0.0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['website'],
-
-    # always loaded
+    'name': "Odoo customizations",
+    'version': '12.0.0.0.32',
+    'depends': ['easy_my_coop_es'],
+    'author': "Coopdevs Treball SCCL and Patrickkappert",
+    'website': 'https://coopdevs.org',
+    'category': "Cooperative management",
+    'description': """
+    Odoo customizations.
+    """,
+    "license": "AGPL-3",
     'data': [
-        'views/website_template.xml',
+        "views/become_company_cooperator_view.xml",
+        "views/become_cooperator_view.xml",
+        "views/subscription_request_view.xml",
+        "views/res_company_view.xml",
+        "views/cooperator_thanks_view.xml"
     ],
-    'installable': True,
 }
