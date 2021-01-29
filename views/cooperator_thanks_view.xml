@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="cooperator_thanks">
+        <field name="name">Cooperator Thanks</field>
+        <field name="inherit_id" ref="easy_my_coop_website.cooperator_thanks"/>
+        <field name="arch" type="xml">
+            <xpath expr='//div[@id="wrap"]/div[2]' position="replace">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>
+                                Et confirmem que hem rebut la teva sol·licitud d’alta de sòcia de Supercoop Manresa.
+                            </p>
+                            <p>
+                                Un cop haguem confirmat les dades, rebràs un correu electrònic indicant-te com fer efectiva l’alta de sòcia.
+                            </p>
+                            <p>
+                              No dubtis en contactar-nos per qualsevol aclariment.
+                            </p>
+                            <p>
+                                Benvinguda a Supercoop Manresa!
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
