@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="become_company_cooperator_supercoop" inherit_id="easy_my_coop_es.become_company_cooperator_es" name="Become company cooperator">
+        <template id="become_company_cooperator_Supercoop" inherit_id="easy_my_coop_es.become_company_cooperator_es" name="Become company cooperator">
             <!-- Hide language select -->
             <xpath expr="//label[@for='lang']/.." position="attributes">
                 <attribute name="hidden">1</attribute>
             </xpath>
             <xpath expr="//select[@name='gender']" position="before">
-            </xpath>
-                    </xpath>
-            <xpath expr="//label[@for='share_product_id']" position="after">
                 <div class="col-md-7 col-sm-8">
-                    <a style="font-size: 0.7rem" target="_blank" rel="noopener" href="https://supercoopmanresa.cat/faq/">Més informació.</a>
+                    <p style="font-size: 0.7rem">Dada d’interès per poder realitzar el Balanç Social de la XES.</p>
                 </div>
             </xpath>
-            <xpath expr="//label[@for='share_product_id']/.." position="after">
 
-                    <div t-attf-class="form-group #{error and 'discovery_channel' in error and 'has-error' or ''}">
+            <xpath expr="//label[@for='share_product_id']" position="after">
+                <div class="col-md-7 col-sm-8">
+                    <a style="font-size: 0.7rem" target="_blank" rel="noopener" href="https://lafeixa.cat/que-es-la-feixa/preguntes-frequents/#capitalsocial">Més informació.</a>
+                </div>
+          
+
+                <div t-attf-class="form-group #{error and 'discovery_channel' in error and 'has-error' or ''}">
                     <label class="col-md-3 col-sm-4 control-label" for="discovery_channel">Discovery channel</label>
                     <select name="discovery_channel" class="col-md-7 col-sm-8 form-control"
                         required="True"
@@ -39,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </xpath>
         </template>
     </data>
